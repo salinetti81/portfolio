@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8" /> 
+
+    <!-- Bootstrap CDN-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <!-- jquery -->
+    <script   src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous"></script>
+
+    <!-- Latest compiled and minified JavaScript for Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <title>Dan Salinetti</title>
+
+  </head>
+
+  <body>
+
+    <section id="section_1">
+      <h1 class="mobile_only">DS</h1>
+      <h1 class="desktop_only "> <span id="d">D</span><span id="a">a</span><span id="n">n</span> <span id="last_name">Salinetti</span></h1>
+      <!-- down arrow from bootstrap; pulls the page up for section 2-->
+          <span class="desktop_only glyphicon glyphicon-chevron-down" aria-hidden="true"></span>
+    </section>
+
+
+
+    <nav id="navbar" >
+        <h2 id="hidden_nav">Dan Salinetti</h2>
+
+        <ul class= "desktop_menu">
+          <li id="about">about</li>
+          <li id="projects">projects</li>
+          <li id="contact">contact</li>
+        </ul>
+
+        <button class=" hamburger mobile_menu">&#9776;</button>
+  <button class="cross">&#735;</button>
+
+
+<div class="menu">
+  <ul>
+      <li class="cross_list" id="about_mobile">about</li>
+      <li class="cross_list" id="projects_mobile">projects</li>
+      <li class="cross_list" id="contact_mobile">contact</li>
+  </ul>
+</div> 
+
+        <!-- hamburger menu for media queries -->
+
+       <!--  <span class="glyphicon glyphicon-menu-hamburger">
+        <ul class = "nav navbar-nav">
+          <li id="about">about</li>
+          <li id="projects">projects</li>
+          <li id="contact">contact</li>
+        </ul></span> -->
+
+
+
+        <hr>
+    </nav>
+
+  <!-- about -->
+    <section id="section_2">
+      <h2>About</h2>
+      <div id="about_div">
+        <p>A New York City based <span>Web Developer</span> and <span>media professional</span> with over a decade of experience in <span>television</span> and <span>radio</span> production.</p>
+
+        <p>A graduate of <span>General Assembly's</span> Web Development Immersive program. I spent an intensive three months studying <span>Full Stack</span> web development and building web applications with front and back end framworks, including AngularJS, Express.js, and Ruby on Rails. </p>
+      </div>
+    <br>
+      <h2>Skills</h2>
+        <ul>
+          <li>HTML |</li>
+          <li>CSS |</li>
+          <li>JavaScript |</li>
+          <li>jQuery |</li>
+          <li>Bootstrp |</li>
+          <li>MongoDB |</li>
+          <li>SQL |</li>
+          <li>Express |</li>
+          <li>AngularJS |</li>
+          <li>Node.js |</li>
+          <li>Ajax |</li>
+          <li>Ruby on Rails |</li>
+          <li>WordPress |</li>
+          <li>Git & GitHub</li>
+        </ul>
+
+    </section>
+
+<!-- projects -->
+    <section id="section_3">
+    <h2>Projects</h2>
+    <div class="desktop_only">
+     <div class='img_wrap'>
+       <a href="http://rubyontrails.herokuapp.com/" target="blank"><img src="img/ruby_on_trails.png" alt="">
+      <p class='img_description'><strong>Ruby on Trails</strong><br> A Full Stack app built with Ruby on Rails. It uses Devise for user authentication, Ospry API for image upload, Google Maps API and geocoding to place location markers on the map, and Disqus for users to leave comments. The database is managed with PostgreSQL.</p>
+      </div></a>
+
+      <a href="https://sounds-board.herokuapp.com/" target="blank"><div class='img_wrap'>
+      <img src="img/soundboard.png" alt="">
+      <p class='img_description'> <strong style="text-align: center;">Sound Board</strong><br> Uses HTML5 audio to trigger mp3's that I created with GarageBand. This is a Full Stack Express app that uses Angular.js to hide and display content and Ajax to populate the comment section with user comments saved to a MongoDB database.</p>
+      </div></a>
+    
+      <a href="https://rocky-tor-53763.herokuapp.com/users" target="blank"><div class='img_wrap'>
+      <img src="img/gig.png" alt="">
+      <p class='img_description'><strong>Gig.it</strong><br> A social network app for musicians to connect; built with the MEAN Stack and HTML, CSS, and JavaScript. <br> Passport handles user authentication; users can sign in, create and edit profile information, connect with other users, and leave comments on friends pages.</p>
+      </div></a> 
+
+      <a href="http://salinetti81.github.io/alifeinthedays/" target="blank"><div class='img_wrap'>
+      <img src="img/life.gif" alt="">
+      <p class='img_description'><strong>A Life in the Days</strong><br>Utilizes the Google Maps API with HTML, CSS, JavaScript and jQuery to make a slide show and interactive map of New York City to map my grandfather's life as he grew up in the Lower East Side during the Great Depression.</p>
+      </div></a>
+
+      <a href="https://sad-space.herokuapp.com/memory.html" target="blank"><div class='img_wrap'>
+      <img src="img/memory.png" alt="">
+      <p class='img_description'><strong>Moons of Neptune</strong><br> A memory game built with HTML, CSS, and JavaScript.</p></a>
+      </div>
+
+      <a href=" https://sad-space.herokuapp.com/" target="blank"><div class='img_wrap'>
+      <img src="img/space.gif" alt="">
+      <p class='img_description'><strong>SPACE</strong><br> A MEAN Stack web app built with Angular.js; it is two single page apps, linked together to make an interactive map of the solar system with a page to play games based on each planet.</p>
+      </div></a>
+    </div>
+
+  <div class="mobile_only">
+    <div class='img_wrap'>
+
+       <a href="http://rubyontrails.herokuapp.com/" target="blank"><h4>Ruby on Trails</h4><img src="img/ruby_on_trails.png" alt=""></a>
+      <p class='mobile_img_description'><br> A Full Stack app built with Ruby on Rails. It uses Devise for user authentication, Ospry API for image upload, Google Maps API and geocoding to place location markers on the map, and Disqus for users to leave comments. The database is managed with PostgreSQL.</p>
+      </div>
+
+      <a href="https://sounds-board.herokuapp.com/" target="blank"><div class='img_wrap'><h4>Sound Board</h4>
+      <img src="img/soundboard.png" alt=""></a>
+      <p class='mobile_img_description'><br> Uses HTML5 audio to trigger mp3's that I created with GarageBand. This is a Full Stack Express app that uses Angular.js to hide and display content and Ajax to populate the comment section with user comments saved to a MongoDB database.</p>
+      </div>
+    
+      <a href="https://rocky-tor-53763.herokuapp.com/users" target="blank"><div class='img_wrap'><h4>Gig.it</h4>
+      <img src="img/gig.png" alt="">
+      <p class='mobile_img_description'></a><br> A social network app for musicians to connect; built with the MEAN Stack and HTML, CSS, and JavaScript. <br> Passport handles user authentication; users can sign in, create and edit profile information, connect with other users, and leave comments on friends pages.</p>
+      </div> 
+
+      <a href="http://salinetti81.github.io/alifeinthedays/" target="blank"><div class='img_wrap'><h4>A Life in the Days</h4>
+      <img src="img/life.gif" alt="">
+      <p class='mobile_img_description'></a><br>Utilizes the Google Maps API with HTML, CSS, JavaScript and jQuery to make a slide show and interactive map of New York City to map my grandfather's life as he grew up in the Lower East Side during the Great Depression.</p>
+      </div>
+
+      <a href="https://sad-space.herokuapp.com/memory.html" target="blank"><div class='img_wrap'><h4>Moons of Neptune</h4>
+      <img src="img/memory.png" alt="">
+      <p class='mobile_img_description'></a><br> A memory game built with HTML, CSS, and JavaScript.</p>
+      </div>
+
+      <a href=" https://sad-space.herokuapp.com/" target="blank"><div class='img_wrap'><h4>SPACE</h4>
+      <img src="img/space.gif" alt="">
+      <p class='mobile_img_description'><br></a>A MEAN Stack web app built with Angular.js; it is two single page apps, linked together to make an interactive map of the solar system with a page to play games based on each planet.</p>
+      </div>
+
+  </div>
+
+  </section>
+
+<!-- contact -->
+  <section id="section_4">
+    <h2>You need a website, I need a gig.</h2> 
+    <h2>Let's work together.</h2>
+    
+  <div class="form-style-2">
+     <form id="contactform" method="post">
+    <label for="field1"><span>Name <span class="required">*</span></span><input type="text" class="input-field" name="name" value="" /></label>
+    <label for="field2"><span>Email <span class="required">*</span></span><input type="text" class="input-field" name="email" value="" /></label>
+    <label><span>Phone</span><input type="text" class="tel-number-field" name="tel_no" value="" maxlength="15" /></label>
+    <label for="field5"><span>Message <span class="required">*</span></span><textarea name="message" class="textarea-field"></textarea></label>
+    <input type="hidden" name="_next" value="/" />
+    <input type="text" name="_gotcha" style="display:none" />
+
+    <label><span>&nbsp;</span><input type="submit" value="Submit" /></label>
+    </form>
+  </div>
+
+    <ul>
+      <li><a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;tf=1&amp;to=dan@dansalinetti.com" target="_blank"><i class="fa fa-envelope fa-5x" aria-hidden="true" ></i>
+      </a></li>
+
+      <li><a href="https://github.com/salinetti81" target="_blank"><i class="fa fa-github-alt fa-5x" aria-hidden="true"></i></a></li>
+
+      <li><a href="https://www.linkedin.com/in/dansalinetti" target="_blank"><i class="fa fa-linkedin fa-5x" aria-hidden="true"></i></a></li>
+
+      <li><a href="http://twitter.com/DanSalinetti" target="blank"><i class="fa fa-twitter fa-5x" aria-hidden="true"></i></a></li>
+    </ul>
+    
+  </section>
+  
+  <footer>
+  
+    <span class="glyphicon glyphicon-chevron-up" ></span>
+    
+  </footer>
+
+  </body>
+
+    <!-- Custom JavaScript -->
+    <script type="text/javascript" src="js/app.js"></script>
+
+    <!--favicon code-->
+    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
+    
+    <!-- link to font awesome for social media icons -->
+    <script src="https://use.fontawesome.com/949906c477.js"></script>
+
+</html>
+
+
+
+
+
+
+
+
