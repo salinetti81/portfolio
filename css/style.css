@@ -62,7 +62,7 @@ p {
 }
 
 #section_1 {
-  height: 595px;
+  height: 100vh;
   padding-top: 150px;
 }
 
@@ -237,9 +237,10 @@ nav li:hover {
 
 #section_2 {
   background-color: #211616;
-  height: auto;
+  height: 100vh;
   color: #F2EFEF;
   padding: 10%;
+
   /*min-height: 100vh;*/
 }
 
@@ -274,7 +275,7 @@ nav li:hover {
 
 #section_3 {
   background-color: ;
-  height: 480px;
+  height: 100vh;
   color: black;
   padding: 5% 10%;
   height: auto;
@@ -332,7 +333,7 @@ nav li:hover {
 
 #section_4 {
   background-color: ;
-  height: 25%;
+  height: 100vh;
   color: black;
   padding: 5% 10% 0 0 ;
   text-align: center;
@@ -463,6 +464,10 @@ nav li:hover {
 }
 
 @media (max-width: 885px) { 
+  #section_1 {
+    height: 100vh;
+  }
+
   #section_1 h1 {
     font-size: 7em;
     margin-left: 15%;
@@ -554,6 +559,11 @@ form {
 } /*end med*/
 
 @media (max-width: 715px) { 
+    #section_1 {
+
+    height: 100vh;
+  }
+
   #section_1 h1 {
     font-size: 6em;
     margin-left: 15%;
@@ -567,6 +577,11 @@ form {
 
 /**************** SMALLER SCREENSIZE ON DESKTOP BROWSER ****************/
 @media (max-width: 665px) { 
+
+  #section_1 {
+  height: 100vh;
+  }
+
   #section_1 h1 {
     font-size: 5em;
     margin-left: 20%;
@@ -689,6 +704,11 @@ form {
 } /*end media query for smaller browser size on desktop*/
 
 @media (max-width: 545px) { 
+  
+  #section_1 {
+    height: 100vh;
+  }
+
   #section_1 h1 {
     font-size: 4em;
     margin-left: 15%;
