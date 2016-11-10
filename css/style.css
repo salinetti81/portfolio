@@ -55,7 +55,7 @@ p {
 }
 
 #section_1 h1 {
-  margin-left: 22%;
+  margin-left: 24%;
   font-size: 8em;
   font-weight: bold;
   color: black;
@@ -236,16 +236,16 @@ nav li:hover {
 }
 
 #section_2 {
-  background-color: #211616;
+  background-color: #202020;
   height: 100vh;
-  color: #F2EFEF;
-  padding: 10%;
-
-  /*min-height: 100vh;*/
+  color: #CCCCCC;
+  padding: 5% 10% 1% 15%;
 }
 
 #section_2 h2 {
-  font-size: 2em
+  padding-top: 10%;
+  font-size: 2em;
+  margin-left: 40%
 }
 
 #section_2 p {
@@ -335,16 +335,19 @@ nav li:hover {
   background-color: ;
   height: 100vh;
   color: black;
-  padding: 5% 10% 0 0 ;
-  text-align: center;
+  /*text-align: center;*/
 }
 
+#section_4 h2 {
+  text-align: center;
+  /*margin-left: 10%;*/
+}
 
 #section_4 ul {
   list-style: none;
   margin-top: 100px;
-  margin-left: -4%;
-  font-size: 18px;
+  margin-left: 28%;
+  font-size: 13px;
 }
 
 #section_4 li {
@@ -367,7 +370,7 @@ nav li:hover {
 /*FORM STYLING*/
 
 .form-style-2{
-    margin: 40px 22%;
+    margin: 40px 25%;
     max-width: 500px;
     padding: 20px 12px 10px 20px;
     font: 13px Arial, Helvetica, sans-serif;
@@ -377,8 +380,9 @@ nav li:hover {
     margin: 0px 0px 15px 0px;
 }
 .form-style-2 label > span{
-    width: 100px;
+    width: 40%;
     font-weight: bold;
+    font-size: 2em;
     float: left;
     padding-top: 8px;
     padding-right: 5px;
@@ -391,6 +395,7 @@ nav li:hover {
 }
 .form-style-2 input.input-field{
     width: 48%;
+    margin-left: 20;
     
 }
 
@@ -424,6 +429,7 @@ nav li:hover {
 .form-style-2 input[type=submit],
 .form-style-2 input[type=button]{
     border: none;
+    margin-left: 20%;
     padding: 8px 15px 8px 15px;
     background: #337ab7;
     color: #fff;
@@ -464,23 +470,13 @@ nav li:hover {
 }
 
 @media (max-width: 885px) { 
-  #section_1 {
-    height: 100vh;
-  }
-
-  #section_1 h1 {
-    font-size: 7em;
-    margin-left: 15%;
-  }
-
-
   #section_2 {
   height: 40%;
-  padding: 5%;
+  padding: 10% 5%;
   }
 
   #section_2 h2 {
-    text-align: center;
+    margin-left: 40%;
     font-size: 2em;
   }
 
@@ -607,7 +603,7 @@ form {
   }
 
   .hamburger {
-    display: inline-block;
+    display: none;
     background: none;
     position: relative;
     float: right;
@@ -674,7 +670,7 @@ form {
   }
 
   #section_2 h2 {
-    text-align: center;
+    margin-left: 40%;
     font-size: 2em;
   }
 
@@ -698,6 +694,14 @@ form {
     padding: 10% 30% 0 30%;
   }
 
+  .mobile_only {
+    display: none;
+  }
+
+  .form-style-2 {
+    margin: 0;
+  }
+
   #section_4 i {
     font-size: 3em;
   }
@@ -712,6 +716,10 @@ form {
   #section_1 h1 {
     font-size: 4em;
     margin-left: 15%;
+  }
+
+  .mobile_only {
+    display: none;
   }
 
 }
@@ -775,6 +783,10 @@ form {
   width: 280%;
 }
 
+.mobile_only {
+    display: none;
+  }
+
 #section_4 ul {
   margin-bottom: 10%;
   margin-left: -15%;
@@ -832,13 +844,13 @@ form {
     display: inline-block;
     background: none;
     position: absolute;
-    top: 23px;
+    top: 0;
     right: 30px;
     line-height: 100px;
     padding: 0px 15px 0px 15px;
     color: #337ab7;
     border: 0;
-    font-size: 8em;
+    font-size: 6em;
     font-weight: bold;
     cursor: pointer;
     outline: none;
@@ -887,54 +899,14 @@ form {
     border-bottom:#1d1f20 1px solid;
   }
 
-  /*.menu li:hover {
-    display: block;    
-    background:#181818; 
-    padding:15px 0 15px 0; 
-    border-bottom:#1d1f20 1px solid;
-  }*/
-
-  /*.menu ul li a { 
-    text-decoration:none;  
-    margin: 0px; 
-    color:#fff;}
-
-  .menu ul li a:hover {  
-    color: #fff; 
-    text-decoration:none;
-  }
-
-  .menu a {
-    text-decoration:none; 
-    color:white;
-  }
-
-  .menu a:hover {
-    text-decoration:none; 
-    color:white;
-  }*/
-
-/*
-  .glyphicon-menu-hamburger {
-    display: block;
-    float: right;
-  /*  margin-right: 10%;*/
-    /*margin: 10px 10% 20px 0;
-    font-size: 3em;
-    color: rgb(101, 120, 135);
-  }*/
-
-  /*.glyphicon-menu-hamburger:hover {
-    cursor: pointer;
-  }*/
-
   #section_2 {
   height: 40%;
   padding-top: 5%;
   }
 
   #section_2 h2 {
-    text-align: center;
+    /*text-align: center;*/
+    margin-left: 40%;
     font-size: 2.5em;
   }
 
@@ -1003,6 +975,9 @@ form {
   width: 109%;
 }
 
+.form-style-2 {
+  
+  }
 
 #section_4 ul {
   margin-bottom: 10%;

@@ -36,14 +36,14 @@ $(document).ready(function() {
    // page scrolls down to section 2 when arrow is clicked in section 1
   $(".glyphicon-chevron-down").click(function() {
     $('html,body').animate({
-      scrollTop: $("#navbar").offset().top},
+      scrollTop: $("#navbar").offset().top -80},
         'slow');
     });
 
   //Scroll to top while page reloads
   $(".glyphicon-chevron-up").click(function() {
     $('html, body').animate({
-      scrollTop: $("#section_1").offset().top -50},
+      scrollTop: $("#section_2").offset().top -50},
       'slow');
   });
 
