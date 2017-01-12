@@ -42,7 +42,7 @@
         <h2 id="hidden_nav">Dan Salinetti</h2>
 
         <ul class= "desktop_menu">
-          <li id="about">about</li>
+          <li id="about">services</li>
           <li id="projects">portfolio</li>
           <li id="contact">contact</li>
         </ul>
@@ -65,12 +65,21 @@
     <section id="section_2">
       <!-- <h2>About</h2> -->
       <div id="about_div">
-        <p>A New York City based Web Developer and media professional with over a decade of experience in television and radio production.</p>
+<!--         <p>A New York City based Web Developer and media professional with over a decade of experience in television and radio production.</p>
 
         <p>A graduate of General Assembly's Web Development Immersive program. I spent an intensive three months studying Full Stack web development and building web applications with front and back end framworks, including AngularJS, Express.js, and Ruby on Rails. </p>
       </div>
-    <br>
-      <h2>Skills</h2>
+    <br> -->
+
+        <h2>Web Development</h2>  
+          <p>Clean, responsive, mobile friendly, cross browser compatible websites and web apps </p>
+          <p>Website design, hand-coded front and back end development, social networking integration, database optimization, media storage, and heightened site performance</p>
+        <h2></h2>
+        <h2>Maintenance and Support</h2>
+          <p>Continuous maintenance and technical support to keep your website functional and current</p>
+          <p>Hosting solutions, continuous updating and troubleshooting, email client configuration, traffic analytics, routine backups</p>
+        <h2></h2>
+        <h2>Tools I Use</h2>
         <ul>
           <li>HTML |</li>
           <li>CSS |</li>
@@ -129,6 +138,11 @@
       <img src="img/space.gif" alt="">
       <p class='img_description'><strong>SPACE</strong><br> A MEAN Stack web app built with Angular.js; it is two single page apps, linked together to make an interactive map of the solar system with a page to play games based on each planet.</p>
       </div></a>
+
+      <a href=" https://github.com/salinetti81" target="blank"><div class='img_wrap'>
+      <img src="img/octocat.png" alt="">
+      <p class='img_description'><strong></strong><br> Check out my GitHub profile for a peak at what I'm currently working on: github.com/salinetti81</p>
+      </div></a>
     </div>
 
   <div class="mobile_only">
@@ -178,10 +192,17 @@
     
   <div class="form-style-2">
      <form id="contactform" method="post">
-    <label for="field1"><span>Name <span class="required">*</span></span><input type="text" class="input-field" name="name" value="" /></label>
-    <label for="field2"><span>Email <span class="required">*</span></span><input type="text" class="input-field" name="email" value="" /></label>
-    <label><span>Phone</span><input type="text" class="tel-number-field" name="tel_no" value="" maxlength="15" /></label>
-    <label for="field5"><span>Message <span class="required">*</span></span><textarea name="message" class="textarea-field"></textarea></label>
+    
+    <label for="field1"><input type="text" name= "name" value="name" onfocus="this.value = this.value=='name'?'':this.value;" onblur="this.value = this.value==''?'name':this.value;"/></label><br>
+    
+    <label for="field2"><input type="email" name= "email" value="email" onfocus="this.value = this.value=='email'?'':this.value;" onblur="this.value = this.value==''?'email':this.value;"/></label><br>
+    
+    <label for="field3"><input type="text" name= "phone" value="phone" onfocus="this.value = this.value=='phone'?'':this.value;" onblur="this.value = this.value==''?'phone':this.value;" maxlength="15" /></label><br>
+     
+    <label for="field4"><input type="text" name= "subject" value="subject" onfocus="this.value = this.value=='subject'?'':this.value;" onblur="this.value = this.value==''?'subject':this.value;"/></label><br>
+
+    <textarea name="message" class="textarea-field"></textarea>
+
     <input type="hidden" name="_next" value="/" />
     <input type="text" name="_gotcha" style="display:none" />
 
