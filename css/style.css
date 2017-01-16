@@ -468,6 +468,21 @@ input {
     transition: .5s;
 }
 
+::-webkit-input-placeholder {
+   color: #595959;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #595959;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #595959;  
+}
+
+:-ms-input-placeholder {  
+   color: #595959;  
+}
 
 .glyphicon-chevron-up {
   font-size: 2.5em;
