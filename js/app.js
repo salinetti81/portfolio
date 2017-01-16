@@ -43,7 +43,7 @@ $(document).ready(function() {
   //Scroll to top while page reloads
   $(".glyphicon-chevron-up").click(function() {
     $('html, body').animate({
-      scrollTop: $("#section_2").offset().top -50},
+      scrollTop: $("#section_2").offset().top -70},
       'slow');
   });
 
