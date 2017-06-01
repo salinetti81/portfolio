@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html>
-
+  <html ng-app="Portfolio">
+  <meta charset="utf-8" /> 
   <head>
-
-    <meta charset="utf-8" /> 
-
     <!-- Bootstrap CDN-->
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
     <!-- Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <!-- Angualar script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js"></script>
 
     <!-- jquery -->
     <script   src="https://code.jquery.com/jquery-1.12.4.min.js"   integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="   crossorigin="anonymous"></script>
@@ -20,7 +20,6 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
-
 
     <!--favicon code-->
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"/>
@@ -71,10 +70,10 @@
           <ul class="mobile_only">
             <li>Website Design</li>
             <li>Hand-coded front & back end development</li>
+            <li>Heightened Site Performance</li>
             <li>Social Network Integration</li>
             <li>Database Optimization</li>
             <li>Media Storage</li>
-            <li>Heightened Site Performance</li>
           </ul>
         <h2></h2>
         <h2>Maintenance and Support</h2>
@@ -84,8 +83,8 @@
             <li>Hosting Solutions</li>
             <li>Updating & Troubleshooting</li>
             <li>Email Client Configuration</li>
-            <li>Traffic Analytics</li>
             <li>Routine Backups</li>
+            <li>Traffic Analytics</li>
           </ul>
         <h2></h2>
         <h2>Tools I Use</h2>
@@ -95,7 +94,7 @@
           <li>JavaScript |</li>
           <li>jQuery |</li>
           <li>Python |</li>
-          <li>Bootstrp |</li>
+          <li>Bootstrap |</li>
           <li>MongoDB |</li>
           <li>SQL |</li>
           <li>Express |</li>
@@ -106,92 +105,101 @@
           <li>WordPress |</li>
           <li>Git & GitHub</li>
         </ul>
-
     </section>
 
-<!-- projects -->
-    <section id="section_3">
+<!-- portfolio -->
+    <section id="section_3" ng-controller="PortfolioController as portCtrl">
+      <div class="desktop_only">
+        <div class='img_wrap'>
+           <a href="http://handpulledmedia.com/" target="blank"><img src="img/hand_pulled.png" alt="">
+          <p class='img_description'><strong>Hand Pulled Media</strong><br></strong><br> Designed and coded a website for a NYC based film production company. Worked with the client to turn content and media files into a cross browser, mobile friendly site.</p>
+        </div></a>
 
-    <div class="desktop_only">
-    <div class='img_wrap'>
-       <a href="http://handpulledmedia.com/" target="blank"><img src="img/hand_pulled.png" alt="">
-      <p class='img_description'><strong>Hand Pulled Media</strong><br></strong><br> Designed and coded a website for a NYC based film production company. Worked with the client to turn content and media files into a cross browser, mobile friendly site.</p>
-      </div></a>
+        <div class='img_wrap'>
+           <a href="https://salinetti81.github.io/calculator/" target="blank"><img src="img/calculator.png" alt="">
+          <p class='img_description'><strong>Savings Calculator</strong><br></strong><br> A simple JavaScript powered monthly savings calculator.</p>
+        </div></a>
 
-     <div class='img_wrap'>
-       <a href="http://rubyontrails.herokuapp.com/" target="blank"><img src="img/ruby_on_trails.png" alt="">
-      <p class='img_description'><strong>Ruby on Trails</strong><br> A Full Stack app built with Ruby on Rails. It uses Devise for user authentication, Ospry API for image upload, Google Maps API and geocoding to place location markers on the map, and Disqus for users to leave comments. The database is managed with PostgreSQL.</p>
-      </div></a>
+         <div class='img_wrap'>
+           <a href="http://rubyontrails.herokuapp.com/" target="blank"><img src="img/ruby_on_trails.png" alt="">
+          <p class='img_description'><strong>Ruby on Trails</strong><br> A Full Stack app built with Ruby on Rails. It uses Devise for user authentication, Ospry API for image upload, Google Maps API and geocoding to place location markers on the map, and Disqus for users to leave comments. The database is managed with PostgreSQL.</p>
+        </div></a>
 
-      <a href="https://sounds-board.herokuapp.com/" target="blank"><div class='img_wrap'>
-      <img src="img/soundboard.png" alt="">
-      <p class='img_description'> <strong style="text-align: center;">Sound Board</strong><br> Uses HTML5 audio to trigger mp3's that I created with GarageBand. This is a Full Stack Express app that uses Angular.js to hide and display content and Ajax to populate the comment section with user comments saved to a MongoDB database.</p>
-      </div></a>
-    
-      <a href="https://rocky-tor-53763.herokuapp.com/users" target="blank"><div class='img_wrap'>
-      <img src="img/gig.png" alt="">
-      <p class='img_description'><strong>Gig.it</strong><br> A social network app for musicians to connect; built with the MEAN Stack and HTML, CSS, and JavaScript. <br> Passport handles user authentication; users can sign in, create and edit profile information, connect with other users, and leave comments on friends pages.</p>
-      </div></a> 
+          <a href="https://sounds-board.herokuapp.com/" target="blank"><div class='img_wrap'>
+          <img src="img/soundboard.png" alt="">
+          <p class='img_description'> <strong style="text-align: center;">Sound Board</strong><br> Uses HTML5 audio to trigger mp3's that I created with GarageBand. This is a Full Stack Express app that uses Angular.js to hide and display content and Ajax to populate the comment section with user comments saved to a MongoDB database.</p>
+          </div></a>
+        
+          <a href="https://rocky-tor-53763.herokuapp.com/users" target="blank"><div class='img_wrap'>
+          <img src="img/gig.png" alt="">
+          <p class='img_description'><strong>Gig.it</strong><br> A social network app for musicians to connect; built with the MEAN Stack and HTML, CSS, and JavaScript. <br> Passport handles user authentication; users can sign in, create and edit profile information, connect with other users, and leave comments on friends pages.</p>
+          </div></a> 
 
-      <a href="http://salinetti81.github.io/alifeinthedays/" target="blank"><div class='img_wrap'>
-      <img src="img/life.gif" alt="">
-      <p class='img_description'><strong>A Life in the Days</strong><br>Utilizes the Google Maps API with HTML, CSS, JavaScript and jQuery to make a slide show and interactive map of New York City to map my grandfather's life as he grew up in the Lower East Side during the Great Depression.</p>
-      </div></a>
+          <a href="http://salinetti81.github.io/alifeinthedays/" target="blank"><div class='img_wrap'>
+          <img src="img/life.gif" alt="">
+          <p class='img_description'><strong>A Life in the Days</strong><br>Utilizes the Google Maps API with HTML, CSS, JavaScript and jQuery to make a slideshow and interactive map of New York City to map my grandfather's life as he grew up in the Lower East Side during the Great Depression.</p>
+          </div></a>
+      <div ng-class= "(portCtrl.displayContent)?'active':portfolio" id="hidden" >
+          <a href="https://sad-space.herokuapp.com/memory.html" target="blank"><div class='img_wrap'>
+          <img src="img/memory.png" alt="">
+          <p class='img_description'><strong>Moons of Neptune</strong><br> A memory game built with HTML, CSS, and JavaScript.</p></a>
+          </div>
 
-      <a href="https://sad-space.herokuapp.com/memory.html" target="blank"><div class='img_wrap'>
-      <img src="img/memory.png" alt="">
-      <p class='img_description'><strong>Moons of Neptune</strong><br> A memory game built with HTML, CSS, and JavaScript.</p></a>
-      </div>
+          <a href=" https://sad-space.herokuapp.com/" target="blank"><div class='img_wrap'>
+          <img src="img/space.gif" alt="">
+          <p class='img_description'><strong>SPACE</strong><br> A MEAN Stack web app built with Angular.js; it is two single page apps, linked together to make an interactive map of the solar system with a page to play games based on each planet.</p>
+          </div></a>
 
-      <a href=" https://sad-space.herokuapp.com/" target="blank"><div class='img_wrap'>
-      <img src="img/space.gif" alt="">
-      <p class='img_description'><strong>SPACE</strong><br> A MEAN Stack web app built with Angular.js; it is two single page apps, linked together to make an interactive map of the solar system with a page to play games based on each planet.</p>
-      </div></a>
+          <a href=" https://github.com/salinetti81" target="blank"><div class='img_wrap'>
+          <img src="img/octocat.png" alt="">
+          <p class='img_description'><strong></strong><br> Check out my GitHub profile to see what I'm currently working on: github.com/salinetti81</p>
+          </div></a>
+        </div><!-- end hidden portfolio content -->
+        <h2 ng-click="portCtrl.showContent()" ng-class= "(portCtrl.displayContent)?'click':portfolio">show more</h2>
 
-      <a href=" https://github.com/salinetti81" target="blank"><div class='img_wrap'>
-      <img src="img/octocat.png" alt="">
-      <p class='img_description'><strong></strong><br> Check out my GitHub profile for a peak at what I'm currently working on: github.com/salinetti81</p>
-      </div></a>
+        <h2 ng-click="portCtrl.showContent()" ng-class= "(portCtrl.displayContent)?'active':portfolio" id="hidden">show less</h2>
+    </div > <!-- end desktop only -->
+      <div class="mobile_only">
+        <div class='img_wrap'>
+
+          <a href="http://handpulledmedia.com/" target="blank"><div class='img_wrap'><h4>Hand Pulled Media</h4><img src="img/hand_pulled.png" alt=""></a>
+          <p class='mobile_img_description'><br> Designed and coded a website for a NYC based film production company. Worked with the client to turn content and media files into a cross browser, mobile friendly site.</p>
+          </div>
+
+           <a href="http://rubyontrails.herokuapp.com/" target="blank"><div class='img_wrap'><h4>Ruby on Trails</h4><img src="img/ruby_on_trails.png" alt=""></a>
+          <p class='mobile_img_description'><br> A Full Stack app built with Ruby on Rails. It uses Devise for user authentication, Ospry API for image upload, Google Maps API and geocoding to place location markers on the map, and Disqus for users to leave comments. The database is managed with PostgreSQL.</p>
+          </div>
+
+          <a href="https://sounds-board.herokuapp.com/" target="blank"><div class='img_wrap'><h4>Sound Board</h4>
+          <img src="img/soundboard.png" alt=""></a>
+          <p class='mobile_img_description'><br> Uses HTML5 audio to trigger mp3's that I created with GarageBand. This is a Full Stack Express app that uses Angular.js to hide and display content and Ajax to populate the comment section with user comments saved to a MongoDB database.</p>
+          </div>
+        
+          <a href="https://rocky-tor-53763.herokuapp.com/users" target="blank"><div class='img_wrap'><h4>Gig.it</h4>
+          <img src="img/gig.png" alt="">
+          <p class='mobile_img_description'></a><br> A social network app for musicians to connect; built with the MEAN Stack and HTML, CSS, and JavaScript. <br> Passport handles user authentication; users can sign in, create and edit profile information, connect with other users, and leave comments on friends pages.</p>
+          </div> 
+
+          <a href="http://salinetti81.github.io/alifeinthedays/" target="blank"><div class='img_wrap'><h4>A Life in the Days</h4>
+          <img src="img/life.gif" alt="">
+          <p class='mobile_img_description'></a><br>Utilizes the Google Maps API with HTML, CSS, JavaScript and jQuery to make a slideshow and interactive map of New York City to map my grandfather's life as he grew up in the Lower East Side during the Great Depression.</p>
+          </div>
+
+      <div ng-class= "(portCtrl.displayContent)?'active':portfolio" id="hidden" >
+          
+          <a href="https://sad-space.herokuapp.com/memory.html" target="blank"><div class='img_wrap'><h4>Moons of Neptune</h4>
+          <img src="img/memory.png" alt="">
+          <p class='mobile_img_description'></a><br> A memory game built with HTML, CSS, and JavaScript.</p>
+          </div>
+
+          <a href=" https://sad-space.herokuapp.com/" target="blank"><div class='img_wrap'><h4>SPACE</h4>
+          <img src="img/space.gif" alt="">
+          <p class='mobile_img_description'><br></a>A MEAN Stack web app built with Angular.js; it is two single page apps, linked together to make an interactive map of the solar system with a page to play games based on each planet.</p>
+          </div>
+
     </div>
-
-  <div class="mobile_only">
-    <div class='img_wrap'>
-
-      <a href="http://handpulledmedia.com/" target="blank"><div class='img_wrap'><h4>Hand Pulled Media</h4><img src="img/hand_pulled.png" alt=""></a>
-      <p class='mobile_img_description'><br> Designed and coded a website for a NYC based film production company. Worked with the client to turn content and media files into a cross browser, mobile friendly site.</p>
-      </div>
-
-       <a href="http://rubyontrails.herokuapp.com/" target="blank"><div class='img_wrap'><h4>Ruby on Trails</h4><img src="img/ruby_on_trails.png" alt=""></a>
-      <p class='mobile_img_description'><br> A Full Stack app built with Ruby on Rails. It uses Devise for user authentication, Ospry API for image upload, Google Maps API and geocoding to place location markers on the map, and Disqus for users to leave comments. The database is managed with PostgreSQL.</p>
-      </div>
-
-      <a href="https://sounds-board.herokuapp.com/" target="blank"><div class='img_wrap'><h4>Sound Board</h4>
-      <img src="img/soundboard.png" alt=""></a>
-      <p class='mobile_img_description'><br> Uses HTML5 audio to trigger mp3's that I created with GarageBand. This is a Full Stack Express app that uses Angular.js to hide and display content and Ajax to populate the comment section with user comments saved to a MongoDB database.</p>
-      </div>
-    
-      <a href="https://rocky-tor-53763.herokuapp.com/users" target="blank"><div class='img_wrap'><h4>Gig.it</h4>
-      <img src="img/gig.png" alt="">
-      <p class='mobile_img_description'></a><br> A social network app for musicians to connect; built with the MEAN Stack and HTML, CSS, and JavaScript. <br> Passport handles user authentication; users can sign in, create and edit profile information, connect with other users, and leave comments on friends pages.</p>
-      </div> 
-
-      <a href="http://salinetti81.github.io/alifeinthedays/" target="blank"><div class='img_wrap'><h4>A Life in the Days</h4>
-      <img src="img/life.gif" alt="">
-      <p class='mobile_img_description'></a><br>Utilizes the Google Maps API with HTML, CSS, JavaScript and jQuery to make a slide show and interactive map of New York City to map my grandfather's life as he grew up in the Lower East Side during the Great Depression.</p>
-      </div>
-
-      <a href="https://sad-space.herokuapp.com/memory.html" target="blank"><div class='img_wrap'><h4>Moons of Neptune</h4>
-      <img src="img/memory.png" alt="">
-      <p class='mobile_img_description'></a><br> A memory game built with HTML, CSS, and JavaScript.</p>
-      </div>
-
-      <a href=" https://sad-space.herokuapp.com/" target="blank"><div class='img_wrap'><h4>SPACE</h4>
-      <img src="img/space.gif" alt="">
-      <p class='mobile_img_description'><br></a>A MEAN Stack web app built with Angular.js; it is two single page apps, linked together to make an interactive map of the solar system with a page to play games based on each planet.</p>
-      </div>
-
-  </div>
-
+            <h2 ng-click="portCtrl.showContent()" ng-class= "(portCtrl.displayContent)?'click':portfolio">show more</h2>
+        <h2 ng-click="portCtrl.showContent()" ng-class= "(portCtrl.displayContent)?'active':portfolio" id="hidden">show less</h2>
   </section>
 
 <!-- contact -->
@@ -206,9 +214,9 @@
     
     <label for="field2"><input type="email" name= "email" value="email" onfocus="this.value = this.value=='email'?'':this.value;" onblur="this.value = this.value==''?'email':this.value;"/></label><br>
     
-    <label for="field3"><input type="text" name= "phone" value="phone" onfocus="this.value = this.value=='phone'?'':this.value;" onblur="this.value = this.value==''?'phone':this.value;" maxlength="15" /></label><br>
+    <!-- <label for="field3"><input type="text" name= "phone" value="phone" onfocus="this.value = this.value=='phone'?'':this.value;" onblur="this.value = this.value==''?'phone':this.value;" maxlength="15" /></label><br>
      
-    <label for="field4"><input type="text" name= "subject" value="subject" onfocus="this.value = this.value=='subject'?'':this.value;" onblur="this.value = this.value==''?'subject':this.value;"/></label><br>
+    <label for="field4"><input type="text" name= "subject" value="subject" onfocus="this.value = this.value=='subject'?'':this.value;" onblur="this.value = this.value==''?'subject':this.value;"/></label><br> -->
 
     <textarea type="text" name="message" placeholder="message" class="textarea-field" onfocus="this.placeholder = this.placeholder=='message'?'':this.placeholder;" onblur="this.placeholder = this.placeholder==''?'message':this.placeholder;"></textarea>
 

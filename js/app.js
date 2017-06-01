@@ -29,14 +29,14 @@ $(document).ready(function() {
 
   $("#contact").click(function() {
     $('html, body').animate({
-      scrollTop: $("#section_4").offset().top -90},
+      scrollTop: $("#section_4").offset().top -75},
         'slow');
   });
 
    // page scrolls down to section 2 when arrow is clicked in section 1
   $(".glyphicon-chevron-down").click(function() {
     $('html,body').animate({
-      scrollTop: $("#navbar").offset().top -80},
+      scrollTop: $("#navbar").offset().top -45},
         'slow');
     });
 
@@ -115,6 +115,19 @@ $("#projects_mobile").click(function() {
 
 });//ends document.ready
 
+// Angular //
+var app = angular.module('Portfolio', []);
+
+app.controller('PortfolioController', [function($scope,ngBody){ 
+    
+    this.displayContent = false;
+
+    // click to reveal content
+    var controller = this;
+    this.showContent = function() {
+      controller.displayContent = !controller.displayContent;
+    }
+}]);
 
 
 

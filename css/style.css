@@ -1,3 +1,7 @@
+@font-face { 
+  font-family: 'Ansley Display'; src: url('..fonts/Ansley Display/Ansley Display-Regular.tff'); 
+} 
+
 .hamburger{ 
   background:none;
   position:absolute;
@@ -52,6 +56,7 @@ p {
 }
 
 #section_1 h1 {
+  font-family: 'Ansley Display', ;
   margin-left: 24%;
   font-size: 8em;
   font-weight: bold;
@@ -59,12 +64,13 @@ p {
 }
 
 #section_1 {
+   background:  ;
   height: 100vh;
   padding-top: 150px;
 }
 
 #d {
-  font-family: helvetica; 
+  font-family: 'Ansley Display', helvetica; 
   position: relative;
   -webkit-animation: moving 2s ;
   animation: moving 2s ;
@@ -188,7 +194,7 @@ nav hr {
   display: inline;
   background-color: white;
   width: 101%;
-  height: 55px;
+  height: 45px;
   margin-top: -5px;
   margin-left: -5px;
   z-index: 1;
@@ -198,11 +204,12 @@ nav hr {
 nav h2 {
   display: inline-block;
   transition: 2s;
+  margin-bottom: -10px;
 }
 
 #hidden_nav {
   display: none;
-  margin-bottom: -55px;
+  margin-bottom: -65px;
   margin-left: 10%;
 }
 
@@ -232,10 +239,11 @@ nav li:hover {
 }
 
 #section_2 {
-  background-color: ;
-  height: auto;
-  color: ;
-  padding: 0 10% 1% 15%;
+  height: 100vh;
+  background-color: rgb(243, 243, 243);
+  padding: 1% 10% 1% 15%;
+  border-top: 1px solid rgb(216, 216, 216);
+  border-bottom: 1px solid rgb(216, 216, 216);
 }
 
 #section_2 h2 {
@@ -264,7 +272,6 @@ nav li:hover {
 }
 
 #section_2 ul:last-child {
-  list-style: ;
   width: 100%;
 }
 
@@ -280,11 +287,33 @@ nav li:hover {
 }
 
 #section_3 {
-  background-color: ;
   height: 100vh;
   color: black;
   padding: 5% 10%;
   height: auto;
+}
+
+#hidden {
+  display: none;
+}
+
+#hidden.active {
+  display: block;
+}
+
+
+#section_3 h2 {
+  text-align: center;
+}
+
+.click {
+  display: none;
+}
+
+#section_3 h2:hover {
+  cursor: pointer;
+  color: #575454;
+  transition: .3s;
 }
 
 #section_3 p strong {
@@ -338,9 +367,12 @@ nav li:hover {
 }
 
 #section_4 {
-  background-color: ;
+  background-color: rgb(243, 243, 243);
   height: 100vh;
+  padding-top: 2%;
   color: black;
+  border-top: 1px solid rgb(216, 216, 216);
+  /*border-bottom: 1px solid rgb(216, 216, 216);*/
   /*text-align: center;*/
 }
 
@@ -351,7 +383,7 @@ nav li:hover {
 
 #section_4 ul {
   list-style: none;
-  margin-top: 100px;
+  margin-top: 50px;
   margin-left: 28%;
   font-size: 13px;
 }
@@ -411,7 +443,6 @@ input {
 .form-style-2 input.input-field{
     width: 48%;
     margin-left: 20;
-    
 }
 
 .form-style-2 input.input-field, 
@@ -448,8 +479,8 @@ input {
 .form-style-2 input[type=submit],
 .form-style-2 input[type=button]{
     border: none;
-    
-    margin-top: 3%;
+    margin-top: -3%;
+    margin-bottom: -5%;
     padding: 8px 15px 8px 15px;
     background: #337ab7;
     color: #fff;
@@ -489,7 +520,12 @@ input {
   font-weight: bold;
   color: black;
   float: right;
-  padding: 10% 10% 5% 0;
+  padding: 2% 10% 5% 0;
+}
+
+footer {
+  background-color: rgb(243, 243, 243);
+  /*border-top: 1px solid rgb(216, 216, 216);*/
 }
 
 .glyphicon-chevron-up:hover {
@@ -584,8 +620,6 @@ form {
 #section_4 i {
   font-size: 4em;
 }
-  
-
     
 } /*end med*/
 
@@ -941,6 +975,12 @@ form {
 
   #section_2 h2 {
     font-size: 3em;
+    margin-left: -5%;
+
+  }
+
+  #section_2 h2:nth-child(2n+3) {
+    /*margin-left: -5%;*/
   }
 
   #section_2 p {
@@ -955,8 +995,14 @@ form {
   }
 
   #section_2 ul {
-
+    list-style: none;
+    text-align: center;
   }
+
+   #section_2 ul:nth-child(odd) {
+    margin-left: 16%;
+  }
+
 
   #section_2 ul:last-child {
     margin-left: -5%;
@@ -984,7 +1030,7 @@ form {
 
 #section_3 h2 {
   text-align: center;
-  font-size: 2.5em;
+  font-size: 4.5em;
 }
 
 #section_3 p strong {
@@ -1066,12 +1112,17 @@ form {
 }
 
 .glyphicon-chevron-up {
-  display: none;
+  font-size: 6em;
+  position: fixed;
+  margin-left: 87%;
+  margin-top: 140%;
+  color: #575454;
 }
 
 #section_4 i {
   font-size: 12em;
 }
+
 
 } /*end @media only screen and (max-device-width: 480px) */
 
