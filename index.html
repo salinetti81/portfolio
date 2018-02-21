@@ -52,7 +52,7 @@
 
 <div class="menu">
   <ul>
-      <li class="cross_list" id="about_mobile">about</li>
+      <li class="cross_list" id="about_mobile">services</li>
       <li class="cross_list" id="projects_mobile">portfolio</li>
       <li class="cross_list" id="contact_mobile">contact</li>
   </ul>
@@ -75,34 +75,34 @@
             <li>Database Optimization</li>
             <li>Media Storage</li>
           </ul>
-        <h2></h2>
+       
         <h2>Maintenance and Support</h2>
           <p class="desktop_only">Hosting solutions, updating and troubleshooting, email client configuration, traffic analytics, routine backups</p>
           <p>Continuous maintenance and technical support to keep your website functional and current.</p>
           <ul class="mobile_only">
-            <li>Hosting Solutions</li>
-            <li>Updating & Troubleshooting</li>
-            <li>Email Client Configuration</li>
-            <li>Routine Backups</li>
-            <li>Traffic Analytics</li>
+            <li class="nudge">Hosting Solutions</li>
+            <li class="nudge">Updating & Troubleshooting</li>
+            <li class="nudge">Email Client Configuration</li>
+            <li class="nudge">Routine Backups</li>
+            <li class="nudge">Traffic Analytics</li>
           </ul>
-        <h2></h2>
-        <h2>Tools I Use</h2>
+       
+        <h2>Tools</h2>
         <ul>
-          <li>HTML |</li>
-          <li>CSS |</li>
-          <li>JavaScript |</li>
-          <li>jQuery |</li>
-          <li>Python |</li>
-          <li>Bootstrap |</li>
-          <li>MongoDB |</li>
-          <li>SQL |</li>
-          <li>Express |</li>
-          <li>AngularJS |</li>
-          <li>Node.js |</li>
-          <li>Ajax |</li>
-          <li>Ruby on Rails |</li>
-          <li>WordPress |</li>
+          <li>HTML •</li>
+          <li>CSS •</li>
+          <li>JavaScript •</li>
+          <li>jQuery •</li>
+          <li>Python •</li>
+          <li>Bootstrap •</li>
+          <li>MongoDB •</li>
+          <li>SQL •</li>
+          <li>Express •</li>
+          <li>AngularJS •</li>
+          <li>Node.js •</li>
+          <li>Ajax •</li>
+          <li>Ruby on Rails •</li>
+          <li>WordPress •</li>
           <li>Git & GitHub</li>
         </ul>
     </section>
@@ -110,6 +110,11 @@
 <!-- portfolio -->
     <section id="section_3" ng-controller="PortfolioController as portCtrl">
       <div class="desktop_only">
+        <a href="http://http://blissfulinteriordesign.com/" target="blank"><div class='img_wrap'>
+          <img src="img/blissful.png" alt="">
+          <p class='img_description'><strong>Blissful Interior Design</strong><br>Collaborated with client to design and code an interior design website. </p>
+          </div></a>
+
         <div class='img_wrap'>
            <a href="http://handpulledmedia.com/" target="blank"><img src="img/hand_pulled.png" alt="">
           <p class='img_description'><strong>Hand Pulled Media</strong><br></strong><br> Designed and coded a website for a NYC based film production company. Worked with the client to turn content and media files into a cross browser, mobile friendly site.</p>
@@ -135,20 +140,20 @@
           <p class='img_description'><strong>Gig.it</strong><br> A social network app for musicians to connect; built with the MEAN Stack and HTML, CSS, and JavaScript. <br> Passport handles user authentication; users can sign in, create and edit profile information, connect with other users, and leave comments on friends pages.</p>
           </div></a> 
 
-          <a href="http://salinetti81.github.io/alifeinthedays/" target="blank"><div class='img_wrap'>
+          <!-- <a href="http://salinetti81.github.io/alifeinthedays/" target="blank"><div class='img_wrap'>
           <img src="img/life.gif" alt="">
           <p class='img_description'><strong>A Life in the Days</strong><br>Utilizes the Google Maps API with HTML, CSS, JavaScript and jQuery to make a slideshow and interactive map of New York City to map my grandfather's life as he grew up in the Lower East Side during the Great Depression.</p>
-          </div></a>
-      <div ng-class= "(portCtrl.displayContent)?'active':portfolio" id="hidden" >
+          </div></a> -->
+        <div ng-class= "(portCtrl.displayContent)?'active':portfolio" id="hidden" >
           <a href="https://sad-space.herokuapp.com/memory.html" target="blank"><div class='img_wrap'>
           <img src="img/memory.png" alt="">
           <p class='img_description'><strong>Moons of Neptune</strong><br> A memory game built with HTML, CSS, and JavaScript.</p></a>
           </div>
 
-          <a href=" https://sad-space.herokuapp.com/" target="blank"><div class='img_wrap'>
+          <!-- <a href=" https://sad-space.herokuapp.com/" target="blank"><div class='img_wrap'>
           <img src="img/space.gif" alt="">
           <p class='img_description'><strong>SPACE</strong><br> A MEAN Stack web app built with Angular.js; it is two single page apps, linked together to make an interactive map of the solar system with a page to play games based on each planet.</p>
-          </div></a>
+          </div></a> -->
 
           <a href=" https://github.com/salinetti81" target="blank"><div class='img_wrap'>
           <img src="img/octocat.png" alt="">
@@ -161,6 +166,10 @@
     </div > <!-- end desktop only -->
       <div class="mobile_only">
         <div class='img_wrap'>
+          <a href="http://blissfulinteriordesign.com/" target="blank"><div class='img_wrap'><h4>Blissful Interior Design</h4>
+          <img src="img/blissful.png" alt="">
+          <p class='mobile_img_description'><br> Collaborated with client to design and code an interior design website.</p>
+          </div></a>
 
           <a href="http://handpulledmedia.com/" target="blank"><div class='img_wrap'><h4>Hand Pulled Media</h4><img src="img/hand_pulled.png" alt=""></a>
           <p class='mobile_img_description'><br> Designed and coded a website for a NYC based film production company. Worked with the client to turn content and media files into a cross browser, mobile friendly site.</p>
@@ -180,10 +189,10 @@
           <p class='mobile_img_description'></a><br> A social network app for musicians to connect; built with the MEAN Stack and HTML, CSS, and JavaScript. <br> Passport handles user authentication; users can sign in, create and edit profile information, connect with other users, and leave comments on friends pages.</p>
           </div> 
 
-          <a href="http://salinetti81.github.io/alifeinthedays/" target="blank"><div class='img_wrap'><h4>A Life in the Days</h4>
+          <!-- <a href="http://salinetti81.github.io/alifeinthedays/" target="blank"><div class='img_wrap'><h4>A Life in the Days</h4>
           <img src="img/life.gif" alt="">
           <p class='mobile_img_description'></a><br>Utilizes the Google Maps API with HTML, CSS, JavaScript and jQuery to make a slideshow and interactive map of New York City to map my grandfather's life as he grew up in the Lower East Side during the Great Depression.</p>
-          </div>
+          </div> -->
 
       <div ng-class= "(portCtrl.displayContent)?'active':portfolio" id="hidden" >
           
@@ -192,10 +201,10 @@
           <p class='mobile_img_description'></a><br> A memory game built with HTML, CSS, and JavaScript.</p>
           </div>
 
-          <a href=" https://sad-space.herokuapp.com/" target="blank"><div class='img_wrap'><h4>SPACE</h4>
+          <!-- <a href=" https://sad-space.herokuapp.com/" target="blank"><div class='img_wrap'><h4>SPACE</h4>
           <img src="img/space.gif" alt="">
           <p class='mobile_img_description'><br></a>A MEAN Stack web app built with Angular.js; it is two single page apps, linked together to make an interactive map of the solar system with a page to play games based on each planet.</p>
-          </div>
+          </div> -->
 
     </div>
             <h2 ng-click="portCtrl.showContent()" ng-class= "(portCtrl.displayContent)?'click':portfolio">show more</h2>

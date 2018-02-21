@@ -240,10 +240,11 @@ nav li:hover {
 
 #section_2 {
   height: 100vh;
-  background-color: rgb(243, 243, 243);
+  width: 100%;
+  /*background-color: rgb(243, 243, 243);*/
   padding: 1% 10% 1% 15%;
-  border-top: 1px solid rgb(216, 216, 216);
-  border-bottom: 1px solid rgb(216, 216, 216);
+  /*border-top: 1px solid rgb(216, 216, 216);
+  border-bottom: 1px solid rgb(216, 216, 216);*/
 }
 
 #section_2 h2 {
@@ -254,17 +255,17 @@ nav li:hover {
 
 #section_2 p {
   font-size: 1.5em;
-  width: 50%;
+  width: 40%;
   display: inline-block;
   padding-bottom: 5%;
 }
 
 #section_2 p:nth-child(odd) {
-  font-size: 1.2em;
+  /*font-size: 1.2em;*/
   float: right;
   display: inline-block;
-  margin-right: -10%;
-  color: #595959;
+  /*margin-right: -10%;*/
+  /*color: #595959;*/
 }
 
 #about_div {
@@ -367,11 +368,11 @@ nav li:hover {
 }
 
 #section_4 {
-  background-color: rgb(243, 243, 243);
+  /*background-color: rgb(243, 243, 243);*/
   height: 100vh;
   padding-top: 2%;
   color: black;
-  border-top: 1px solid rgb(216, 216, 216);
+  /*border-top: 1px solid rgb(216, 216, 216);*/
   /*border-bottom: 1px solid rgb(216, 216, 216);*/
   /*text-align: center;*/
 }
@@ -1001,6 +1002,7 @@ form {
 
    #section_2 ul:nth-child(odd) {
     margin-left: 16%;
+    color: blue;
   }
 
 
@@ -1014,6 +1016,11 @@ form {
 
   #section_2 li {
     font-size: 2.3em;
+  }
+
+  .nudge {
+    width: 100%;
+    margin-left: 27%;
   }
 
   #about_div {
